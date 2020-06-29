@@ -1,13 +1,13 @@
-## ---- include = FALSE----------------------------------------------------
+## ---- include = FALSE---------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 
-## ----setup, include = FALSE----------------------------------------------
+## ----setup, include = FALSE---------------------------------------------------
 library(rnbp)
 
-## ---- eval=FALSE---------------------------------------------------------
+## ---- eval=FALSE--------------------------------------------------------------
 #  library(ggplot2)
 #  library(rnbp)
 #  
@@ -19,11 +19,11 @@ library(rnbp)
 #  
 #  knitr::kable(current_exchangerate_table)
 
-## ---- fig.height = 4, fig.width = 8, eval=FALSE--------------------------
+## ---- fig.height = 4, fig.width = 8, eval=FALSE-------------------------------
 #  ggplot(current_exchangerate_table, aes(x = code, y = bid, fill = code)) +
 #    geom_bar(stat = "identity")
 
-## ---- fig.height = 4, fig.width = 8, eval=FALSE--------------------------
+## ---- fig.height = 4, fig.width = 8, eval=FALSE-------------------------------
 #  ## Retrieve last 20 exchange rates for euros
 #  euros_response <- get_last_n_exchangerates("A", "EUR", 20)
 #  
@@ -43,7 +43,7 @@ library(rnbp)
 #    geom_line() +
 #    geom_point()
 
-## ---- fig.height = 4, fig.width = 8, warning = FALSE, eval=FALSE---------
+## ---- fig.height = 4, fig.width = 8, warning = FALSE, eval=FALSE--------------
 #  current_date <- Sys.Date()
 #  response <- get_goldprice_from_interval(current_date - 90, current_date)
 #  
