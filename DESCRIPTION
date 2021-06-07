@@ -1,6 +1,6 @@
 Package: rnbp
 Title: Wrapper for the National Bank of Poland API
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: 
     person(given = "Ryszard",
            family = "Szymanski",
@@ -13,14 +13,13 @@ Description: Use the <http://api.nbp.pl/> API through R. Retrieve
 License: GPL-3
 BugReports: https://github.com/szymanskir/rnbp/issues
 Encoding: UTF-8
-LazyData: true
 Imports: curl, httr, jsonlite, utils
 Suggests: covr, httptest, testthat (>= 2.1.0), knitr, rmarkdown,
         ggplot2
 RoxygenNote: 7.1.0
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2020-06-26 17:22:44 UTC; szymanskir
+Packaged: 2021-06-06 18:01:19 UTC; szymanskir
 Author: Ryszard Szymanski [aut, cre]
 Repository: CRAN
-Date/Publication: 2020-06-29 16:30:03 UTC
+Date/Publication: 2021-06-07 07:30:02 UTC
