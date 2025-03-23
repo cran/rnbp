@@ -1,7 +1,7 @@
 assert <- function(expr, error) {
-    if (!expr) {
-        stop(error, call. = FALSE)
-    }
+  if (!expr) {
+    stop(error, call. = FALSE)
+  }
 }
 
 assert_character <- function(x) {
@@ -30,5 +30,5 @@ assert_interval <- function(from, to) {
   arg_to <- deparse(substitute(to))
 
   error_msg <- sprintf("The %s, %s parameters should define a correct interval.", arg_from, arg_to)
-  assert(from < to, error_msg)
+  assert(from <= to, error_msg)
 }

@@ -1,4 +1,6 @@
-# rnbp (development version)
+# rnbp 0.2.2
+
+* Fix bug where intervals where `from == to` would throw an error (#22)
 
 # rnbp 0.2.1
 
